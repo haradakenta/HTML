@@ -1,0 +1,303 @@
+  <!doctype html>
+  <html class="no-js" lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Foundation for Sites</title>
+      <link rel="stylesheet" href="css/foundation.css">
+      <link rel="stylesheet" href="css/app.css">
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <!-- Error Message/Validate -->
+      <form data-abide novalidate>
+        <div class="grid-x grid-margin-x">
+          <div class="cell">
+            <div data-abide-error class="alert callout" style="display: none;">
+              <p><i class="fi-alert"></i> There are some errors in your form.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Number Validate -->
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-12">
+          <label>Number Required
+          <input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number" >
+          <span class="form-error">
+            Yo, you forgot something in your form!
+          </span>
+          </label>
+          <p class="help-text" id="exampleHelpText">Here is how you fill it out.</p>
+        </div>
+      </div>
+      <!-- Password Validate -->
+      <div class="cell small-12">
+        <label>Password Required
+        <input type="password" id="password" placeholder="sdio389" aria-describedby="exampleHelpText" required>
+        <span class="form-error">
+          I'm Required!
+        </span>
+        </label>
+        <p class="help-text" id="exampleHelpText">Enter a password please!</p>
+      </div>
+
+      <!-- Accordion -->
+
+      <ul class="accordion" data-accordion>
+    <li class="accordion-item is-active" data-accordion-item>
+      <a href="#" class="accordion-title">Accordian 1</a>
+      <div class="accordion-content" data-tab-content >
+        <p>Panel 1.</p>
+        <a href="#">Nowhere to Go</a>
+      </div>
+    </li>
+    <li class="accordion-item is-active" data-accordion-item>
+      <a href="#" class="accordion-title">Accordian 2</a>
+      <div class="accordion-content" data-tab-content >
+        <p>Panel 2.</p>
+        <a href="#">Nowhere to Go</a>
+      </div>
+    </li>
+    <li class="accordion-item is-active" data-accordion-item>
+      <a href="#" class="accordion-title">Accordian 3</a>
+      <div class="accordion-content" data-tab-content >
+        <p>Panel 3.</p>
+        <a href="#">Nowhere to Go</a>
+      </div>
+    </li>
+  </ul>
+
+  <div style="margin-botom: 200px;">
+
+  </div>
+
+    <!-- Badges -->
+
+      <span class="primary badge">A</span>
+      <span class="secondary badge">B</span>
+      <span class="warning badge">C</span>
+      <span class="alert badge">D</span>
+      <span class="success badge">E</span>
+
+      <!-- Breadcrums -->
+
+      <div style="margin-bottom: 200px;"></div>
+
+      <nav aria-label="You are here:" role="navigation">
+    <ul class="breadcrumbs">
+      <li><a href="#0">Home</a></li>
+      <li><a href="#0">Features</a></li>
+      <li class="disabled">Gene Splicing</li>
+      <li>
+        <span class="show-for-sr">Current: </span>Cloning
+      </li>
+    </ul>
+  </nav>
+
+    <!-- Button -->
+    <div style="margin-bottom: 200px;"></div>
+    <button class="button" type="button">Button</button>
+    <button class="success button" type="button">Button</button>
+    <button class="alert button" type="button">Button</button>
+    <button class="tiny button" type="button">Button</button>
+    <button class="small button" type="button">Button</button>
+    <button class="large button" type="button">Button</button>
+    <button class="expanded button" type="button">Button</button>
+
+    <!-- Callout-->
+  <div style="margin-bottom: 400px;"></div>
+      <div class="callout" data-closable>
+    <button class="close-button" aria-label="Close alert" type="button" data-close>
+      <span aria-hidden="true">&time;</span>
+    </button>
+        <h5>Hello world</h5>
+        <p>This is a callout!</p>
+        <a href="#">Link</a>
+      </div>
+      <div class="callout warning">
+        <h5>Hello world</h5>
+        <p>This is a callout!</p>
+        <a href="#">Link</a>
+      </div>
+      <div class="callout success">
+        <h5>Hello world</h5>
+        <p>This is a callout!</p>
+        <a href="#">Link</a>
+      </div>
+      <div class="callout alert">
+        <h5>Hello world</h5>
+        <p>This is a callout!</p>
+        <a href="#">Link</a>
+      </div>
+      <div class="callout secondary">
+        <h5>Hello world</h5>
+        <p>This is a callout!</p>
+        <a href="#">Link</a>
+      </div>
+      <div class="callout primary">
+        <h5>Hello world</h5>
+        <p>This is a callout!</p>
+        <a href="#">Link</a>
+      </div>
+
+        <!-- Dropdown Pane -->
+        <div style="margin-bottom: 700px;"></div>
+        <div style="display: flex; justify-content: center; text-align: center; margin-bottom: 50px;">
+          <button class="button" data-toggle="example-dropdown" type="button">Toggle Dropdown</button>
+          <div class="dropdown-pane" id="example-dropdown" data-dropdown>
+            Dropdown pane
+          </div>
+        </div>
+
+        <!-- Floating buttons -->
+          <div style="margin-bottom: 700px;"></div>
+
+          <!-- <button class="alert button float-left" type="button">Float Left</button>
+          <button class="success button float-left" type="button">Float Right</button> -->
+
+          <!-- Labels -->
+          <span class="primary label">Primary Label</span>
+          <span class="success label">Primary Label</span>
+          <span class="warning label">Primary Label</span>
+          <span class="alert label">Primary Label</span>
+          <span class="secondary label">Primary Label</span>
+
+          <!-- off Canvas -->
+    <div style="margin-botom: 700px;"></div>
+
+          <div class="off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+              <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+                <a href="#"><h2>Hello World</h2></a>
+                <a href="#"><h4>HTML</h4></a>
+                <a href="#"><h4>CSS</h4></a>
+                <a href="#"><h4>Javascript</h4></a>
+              </div>
+            </div>
+          </div>
+        <button clas="button" data-toggle="offCanvasLeft" type="button" >off Canvas</button>
+
+        <!-- Pagination Bar -->
+    <div class="margin-bottom: 700px;"></div>
+
+        <ul style="display: flex; justify-content: center;" class="pagination" role="navigation" aria-label="Pagination">
+          <li class="disabled">Previous<span class="show-for-sr">page</span></li>
+          <li class="current"><span class="show-for-sr">You are on page</span></li>
+          <li><a href="#" aria-label="Page 2">2</a></li>
+          <li><a href="#" aria-label="Page 3">3</a></li>
+          <li><a href="#" aria-label="Page 4">4</a></li>
+          <li class="elipsis" aria-hidden="true"></li>
+          <li><a href="#" aria-label="Page 12">12</a></li>
+          <li><a href="#" aria-label="Page 13">13</a></li>
+          <li><a href="#" aria-label="Next Page">Next<span class="show-for-sr">page</span></a></li>
+        </ul>
+
+        <!-- Progress Bars -->
+  <div style="margin-bottom: 700px;"></div>
+
+        <div class="primary progress">
+          <div class="progress-meter" style="width: 50%;">
+            <p class="progress-meter-text">50%</p>
+          </div>
+        </div>
+
+        <div class="warning progress">
+          <div class="progress-meter" style="width: 65%;">
+            <p class="progress-meter-text">65%</p>
+          </div>
+        </div>
+
+        <div class="alert progress">
+          <div class="progress-meter" style="width: 25%;">
+            <p class="progress-meter-text">25%</p>
+          </div>
+        </div>
+
+        <div class="success progress">
+          <div class="progress-meter" style="width: 3%;">
+            <p class="progress-meter-text">3%</p>
+          </div>
+        </div>
+
+        <!-- Switch -->
+  <div class="margin-bottom: 700px;"></div>
+
+        <div class="switch tiny">
+          <input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch">
+          <label class="switch-paddle" for="tinySwitch">
+            <span class="show-for-sr">Tiny Sandwiches Enabled</span>
+          </label>
+        </div>
+
+        <div class="switch small">
+          <input class="switch-input" id="smallSwitch" type="checkbox" name="exampleSwitch">
+          <label class="switch-paddle" for="tinySwitch">
+            <span class="show-for-sr">Tiny Sandwiches Enabled</span>
+          </label>
+        </div>
+
+        <div class="switch large">
+          <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
+          <label class="switch-paddle" for="largeSwitch">
+            <span class="show-for-sr">Tiny Sandwiches Enabled</span>
+          </label>
+        </div>
+
+        <!-- Table -->
+
+        <table>
+          <thead>
+            <tr>
+              <th width="200">Table header</th>
+              <th>Table header</th>
+              <th width="150">Table header</th>
+              <th width="150">Table header</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Content goes here</td>
+              <td>Lorem ipsum dolor sit amet,</td>
+              <td>Content goes here</td>
+              <td>Content goes here</td>
+            </tr>
+            <tr>
+              <td>Content goes here</td>
+              <td>Lorem ipsum dolor sit amet,</td>
+              <td>Content goes here</td>
+              <td>Content goes here</td>
+            </tr>
+            <tr>
+              <td>Content goes here</td>
+              <td>Lorem ipsum dolor sit amet,</td>
+              <td>Content goes here</td>
+              <td>Content goes here</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <!-- Title Bar -->
+
+        <div class="title-bar">
+          <div class="title-bar-left">
+            <button class="menu-icon" type="button"></button>
+            <span class="title-bar-left">Foundation</span>
+          </div>
+          <div class="title-bar-right">
+            <button class="menu-icon" type="button"></button>
+          </div>
+        </div>
+  <div style="margin-botom: 700px;"></div>
+
+    <!-- Tooltip -->
+
+    <p>The <span data-tooplip alia-haspopup="true" class="has-tip" data-disable-hover="false" tabindex=1 title="Fancy word for a beetle">sss</span></p>
+
+      <!-- <script src="js/vendor/jquery.js"></script>
+      <script src="js/vendor/what-input.js"></script>
+      <script src="js/vendor/foundation.js"></script>
+      <script src="js/app.js"></script> -->
+    </body>
+  </html>
